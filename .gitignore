@@ -1,0 +1,23 @@
+# Claves privadas
+*.pem
+*.key
+
+# Archivos sensibles
+.env
+vault-token.txt
+
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Node modules
+backend/node_modules/
+frontend/node_modules/
+
+# Logs
+*.log
+
+# Archivos de sistema
+.DS_Store

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ParqueMagia — Diversión para todos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>ParqueMagia</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#atracciones">Atracciones</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="hero">
+      <h2>Vive la magia — Diversión para toda la familia</h2>
+      <p>Explora nuestras atracciones, compra entradas y consulta horarios.</p>
+      <button id="btnVerAtracciones">Ver atracciones</button>
+    </section>
+
+    <section id="atracciones" class="cards">
+      <h2>Nuestras Atracciones</h2>
+      <div id="atracciones-list" class="card-grid">
+        <!-- JS insertará tarjetas -->
+      </div>
+    </section>
+
+    <section id="entradas" class="form-section">
+      <h2>Comprar Entradas (demo)</h2>
+      <form id="formTicket">
+        <label>Nombre:
+          <input type="text" id="name" required />
+        </label>
+        <label>Edad:
+          <input type="number" id="age" min="0" required />
+        </label>
+        <label>Atracción:
+          <select id="attractionSelect"></select>
+        </label>
+        <button type="submit">Comprar (simular)</button>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Email: info@parquemagia.example</p>
+      <p>Dirección: Av. Diversión 123, Ciudad Fantasía</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> ParqueMagia. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
