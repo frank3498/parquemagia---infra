@@ -1,6 +1,9 @@
-- name: Provisionar servidor web
-  hosts: web
-  become: true
+---
+- hosts: web
+  become: yes
   tasks:
     - name: Actualizar paquetes
-      ansible.builtin.shell: apt-get update -y || yum update -y
+      yum:
+        name: "*"
+        state: latest
+
